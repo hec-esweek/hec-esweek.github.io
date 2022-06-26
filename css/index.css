@@ -1,0 +1,232 @@
+.header-wrap{
+	width: 100%;
+	padding: 0.2em 0;
+	position: fixed;
+	background: hsla(240,17%,99%,0.97);
+    border-bottom: 0.0625em solid #fff;
+	box-shadow: 0 0.275em 0 hsla(0,0%,0%,0.03);
+	z-index: 100;
+}
+header{
+	position: relative;
+	width:80%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+header>div,nav>ul>li{
+	display: inline-block;
+	float: left;
+}
+#logo{
+	width: 20%;
+}
+#logo img{
+	width: 82px;
+	height: 80px;
+}
+#logo a {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    float: left;
+    border-bottom: none;
+}
+nav{
+	width: 80%;
+	height: 5em;
+	float: right;
+}
+nav>ul{
+	overflow: hidden;
+}
+nav>ul>li{
+	line-height: 5em;
+	width: 20%;
+	text-align: center;
+}
+nav>ul>li>a{
+	font-size: 20px;
+	font-weight:400;
+	color: #2A8AD8;
+	border: none;
+}
+nav>ul>li>a:hover{
+	color: #000;
+}
+.title {
+    margin: 0;
+    padding: 7em 0 3.0625em;
+    /*box-shadow: 0 0.375em #262C35;*/
+    position: relative;
+    background: #2A8AD8;
+    background: -moz-linear-gradient(top, #2b5cd6 0%,#2A8AD8 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#2b5cd6),color-stop(100%,#2A8AD8));
+    background: -webkit-linear-gradient(top, #2b5cd6 0%,#2A8AD8 100%);
+    background: -o-linear-gradient(top, #2b5cd6 0%,#2A8AD8 100%);
+    background: -ms-linear-gradient(top, #2b5cd6 0%,#2A8AD8 100%);
+    background: linear-gradient(to bottom, #2b5cd6 0%,#2A8AD8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b5cd6',endColorstr='#2A8AD8',GradientType=0 );
+}
+.title:before {
+    border-color: transparent;
+    border-top-color: #2b5cd6;
+    border-width: 2.5em;
+    left: 50%;
+    margin-left: -2.45em;
+}
+.title:after, .title:before{
+    top: 100%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.title:after {
+    border-color: transparent;
+    border-top-color: #2A8AD8;
+    border-width: 2em;
+    left: 50%;
+    margin-left: -2em;
+    margin-top: -0.0625em;
+}
+.title.intro h1, .title.intro p,.title.intro h2 {
+	width: 80%;
+    margin: 1.25em auto 0;
+    color: #ffffff;
+    font-size: 1.215em;
+    text-align: center;
+    text-shadow: 0.125em 0.125em 0 hsla(0,0%,0%,0.10);
+}
+.title.intro h2 a:hover{
+	text-decoration: none;
+}
+.title.intro p span{
+	padding: 0;
+	color: #fff;
+	font-size: 1em;
+}
+.title.intro p a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.main section{
+	padding-top:70px;
+	font-family: "微软雅黑";
+}
+section ul li{
+	line-height: 28px
+}
+/*call for papers*/
+.callforpaper h2,
+.submitGuide h2,
+.committee h2,
+.travelReg h2{
+	color: #000000;
+	font-size: 36px;
+	text-align: center;
+	font-weight: bold;
+}
+.callforpaper p,
+.submitGuide p,
+.travelReg p{
+	text-indent: 2em;
+	color: black;
+	line-height: 28px;
+}
+.travelReg p a{
+	color: #2A8AD8;
+	text-decoration: underline;
+}
+.travelReg li a{
+	text-decoration:underline;
+}
+
+/*program committee*/
+
+/*guide*/
+.submitGuide h3 span{
+	font-weight: 600;
+}
+.submitGuide h3 a{
+	color: #2A8AD8;
+}
+.submitGuide p a{
+	color: black;
+	text-decoration: underline;
+}
+.submitGuide .submit_link{
+	text-align: center;
+}
+.submitGuide .submit_link a{
+	color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    background: #000;
+}
+.submitGuide .submit_link a:hover {
+    color: coral;
+}
+.submitGuide h3 a {
+    color: #2A8AD8;
+}
+/*chairs*/
+.chairs ul li span{
+	font-weight: 600;
+}
+/*contact*/
+.contact {
+	background: #fff;
+	padding-top: 20px;
+}
+.contact .contact-left{
+	padding-top:30px ;
+}
+.contact .contact-left p {
+	margin: 10px -15px;		
+}
+.contact .contact-left p span,
+.contact .contact-left p{
+	font-weight:600 ;
+}
+
+.contact .contact-left p.copyright {
+	font-weight: 600;
+}
+.contact .contact-right{
+	text-align: center;
+	font-weight: bold;
+}
+.contact .contact-right .labImg{
+	width: 50%;
+	text-align: center;
+	display: inline-block;
+	float: left;
+}
+.contact .contact-right img{
+	width: 100px;
+}
+@media only screen and (max-width: 790px) {
+	.header-wrap #logo{
+		display: none;
+	}
+	header{
+		width: 100%;
+	}
+	nav{
+		width: 100%;
+	}
+	nav ul li{
+		white-space: nowrap;	
+	}
+	nav ul li a{
+	    font-size: 15px;
+	}
+	
+}
+.col-sm-12.navsmall {
+	display: none;	
+}
+
