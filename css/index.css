@@ -119,7 +119,9 @@ nav>ul>li>a:hover{
 	font-family: "微软雅黑";
 }
 section ul li{
-	line-height: 28px
+	line-height: 28px;
+	font-size: 20px;
+    text-align: justify;
 }
 /*call for papers*/
 .callforpaper h2,
@@ -137,6 +139,8 @@ section ul li{
 	text-indent: 2em;
 	color: black;
 	line-height: 28px;
+	font-size: 20px;
+    text-align: justify;
 }
 .travelReg p a{
 	color: #2A8AD8;
